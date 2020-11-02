@@ -10,4 +10,12 @@ require 'pry'
 
 def get_the_values(groceries)
   #code your solution here!
+  new_array = []
+  groceries.each do |first, second|
+    second.each do |s1|
+      new_array << s1
+    end
+  end
+  return new_array
+
 end

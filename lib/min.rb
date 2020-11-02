@@ -10,4 +10,15 @@ require 'pry'
 
 def get_the_min(groceries)
   #code your solution here!
+  temp_string = "z"
+  groceries.each do |first, second|
+    second.each do |s1|
+      if s1 < temp_string
+        temp_string = s1
+      end
+    end
+  end
+  return temp_string
+
+
 end
